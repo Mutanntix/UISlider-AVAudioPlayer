@@ -41,6 +41,7 @@ class MainViewController: UIViewController {
 //MARK: UI
 extension MainViewController {
     private func initializate() {
+        view.backgroundColor = .white
         addSubviews()
         setupSongViews()
     }
@@ -80,8 +81,8 @@ extension MainViewController {
     private func setupConstraints() {
         topView.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            make.top.equalToSuperview().offset(30)
             make.height.equalToSuperview().multipliedBy(0.1)
+            make.top.equalToSuperview().offset(40)
             make.width.equalToSuperview().multipliedBy(0.4)
         }
         

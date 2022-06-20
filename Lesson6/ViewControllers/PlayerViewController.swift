@@ -62,10 +62,12 @@ class PlayerViewController: UIViewController {
 extension PlayerViewController {
     private func initializate() {
         addSubviews()
+        updateUI()
         addBtnTargets()
         setSongDuration()
         setupTimer()
         
+        view.backgroundColor = .white
         navigationController?.navigationBar.isHidden = true
         
         albumImgView.layer.cornerRadius = 10
@@ -79,6 +81,11 @@ extension PlayerViewController {
         shareBtn].forEach { [unowned self] subview in
             view.addSubview(subview)
         }
+    }
+    
+    private func updateUI() {
+        songDescrtiptionStackView.setupTextForLabels(name: currentSong.name,
+                                                     album: currentSong.albumName)
     }
 }
 
@@ -196,6 +203,7 @@ extension PlayerViewController {
         songIndex += 1
         currentSong = songs[songIndex]
         setSongDuration()
+        updateUI()
         currentSong.play()
     }
     
@@ -209,6 +217,7 @@ extension PlayerViewController {
         songIndex -= 1
         currentSong = songs[songIndex]
         setSongDuration()
+        updateUI()
         currentSong.play()
     }
 }
