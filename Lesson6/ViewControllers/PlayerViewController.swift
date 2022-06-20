@@ -37,14 +37,20 @@ class PlayerViewController: UIViewController {
     var songs = [Song]()
     var currentSong: Song!
     var songIndex = 0
-    private var timer: Timer?
-    private var sliderTimer = Timer()
+    private weak var timer: Timer?
+    private weak var sliderTimer: Timer?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         initializate()
         setupConstraints()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        timer?.invalidate()
+        sliderTimer?.invalidate()
     }
     
     deinit {
@@ -180,7 +186,7 @@ extension PlayerViewController {
         guard sender == sliderView.slider
         else { return }
         timer?.invalidate()
-        sliderTimer.invalidate()
+        sliderTimer?.invalidate()
         sliderTimer = Timer.scheduledTimer(withTimeInterval: 0.2,
                                      repeats: false,
                                      block: { [unowned self] _ in
