@@ -7,23 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD3DD8E5285F217F00B61780 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3DD8E4285F217F00B61780 /* Images.swift */; };
+		FD826541285FBAD5008E8FBA /* PlayerButtonsStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD826540285FBAD5008E8FBA /* PlayerButtonsStackView.swift */; };
+		FD82654328605485008E8FBA /* Yesterday.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FD82654228605485008E8FBA /* Yesterday.mp3 */; };
+		FD82654528605494008E8FBA /* WalkingTheWire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FD82654428605494008E8FBA /* WalkingTheWire.mp3 */; };
+		FD826547286059A2008E8FBA /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD826546286059A1008E8FBA /* CustomSlider.swift */; };
 		FDA340E8285E023400DADE43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA340E7285E023400DADE43 /* AppDelegate.swift */; };
 		FDA340EA285E023400DADE43 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA340E9285E023400DADE43 /* SceneDelegate.swift */; };
-		FDA340EC285E023400DADE43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA340EB285E023400DADE43 /* ViewController.swift */; };
+		FDA340EC285E023400DADE43 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA340EB285E023400DADE43 /* MainViewController.swift */; };
 		FDA340EF285E023400DADE43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDA340ED285E023400DADE43 /* Main.storyboard */; };
 		FDA340F1285E023700DADE43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDA340F0285E023700DADE43 /* Assets.xcassets */; };
 		FDA340F4285E023700DADE43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDA340F2285E023700DADE43 /* LaunchScreen.storyboard */; };
+		FDA3410A285E043800DADE43 /* MainTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA34103285E043800DADE43 /* MainTextField.swift */; };
+		FDA3410B285E043800DADE43 /* SongView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA34104285E043800DADE43 /* SongView.swift */; };
+		FDA3410C285E043800DADE43 /* MainTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA34105285E043800DADE43 /* MainTopView.swift */; };
+		FDA3410D285E043800DADE43 /* HeaderLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA34106285E043800DADE43 /* HeaderLabel.swift */; };
+		FDA3410E285E043800DADE43 /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA34107285E043800DADE43 /* MainButton.swift */; };
+		FDA3410F285E043800DADE43 /* SongImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA34108285E043800DADE43 /* SongImageView.swift */; };
+		FDA34116285E048000DADE43 /* StringAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA34111285E048000DADE43 /* StringAttributes.swift */; };
+		FDA34117285E048000DADE43 /* SegueIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA34112285E048000DADE43 /* SegueIdentifiers.swift */; };
+		FDA34118285E048000DADE43 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA34113285E048000DADE43 /* Fonts.swift */; };
+		FDA34119285E048000DADE43 /* UIButton + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA34115285E048000DADE43 /* UIButton + Extension.swift */; };
+		FDA3411D285E055700DADE43 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA3411C285E055700DADE43 /* PlayerViewController.swift */; };
+		FDA5104A285F3B9E00F4C2FD /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FDA51049285F3B9E00F4C2FD /* SnapKit */; };
+		FDA5104D285F4AB400F4C2FD /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA5104C285F4AB400F4C2FD /* Song.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FD3DD8E4285F217F00B61780 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		FD826540285FBAD5008E8FBA /* PlayerButtonsStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerButtonsStackView.swift; sourceTree = "<group>"; };
+		FD82654228605485008E8FBA /* Yesterday.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Yesterday.mp3; path = ../../../../.Trash/Yesterday.mp3; sourceTree = "<group>"; };
+		FD82654428605494008E8FBA /* WalkingTheWire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WalkingTheWire.mp3; sourceTree = "<group>"; };
+		FD826546286059A1008E8FBA /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
 		FDA340E4285E023400DADE43 /* Lesson6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDA340E7285E023400DADE43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDA340E9285E023400DADE43 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FDA340EB285E023400DADE43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FDA340EB285E023400DADE43 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FDA340EE285E023400DADE43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FDA340F0285E023700DADE43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDA340F3285E023700DADE43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDA340F5285E023700DADE43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDA34103285E043800DADE43 /* MainTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTextField.swift; sourceTree = "<group>"; };
+		FDA34104285E043800DADE43 /* SongView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongView.swift; sourceTree = "<group>"; };
+		FDA34105285E043800DADE43 /* MainTopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTopView.swift; sourceTree = "<group>"; };
+		FDA34106285E043800DADE43 /* HeaderLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderLabel.swift; sourceTree = "<group>"; };
+		FDA34107285E043800DADE43 /* MainButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
+		FDA34108285E043800DADE43 /* SongImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongImageView.swift; sourceTree = "<group>"; };
+		FDA34111285E048000DADE43 /* StringAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringAttributes.swift; sourceTree = "<group>"; };
+		FDA34112285E048000DADE43 /* SegueIdentifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueIdentifiers.swift; sourceTree = "<group>"; };
+		FDA34113285E048000DADE43 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		FDA34115285E048000DADE43 /* UIButton + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton + Extension.swift"; sourceTree = "<group>"; };
+		FDA3411C285E055700DADE43 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		FDA5104C285F4AB400F4C2FD /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +66,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDA5104A285F3B9E00F4C2FD /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD3DD8E6285F2DC700B61780 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FDA340DB285E023400DADE43 = {
 			isa = PBXGroup;
 			children = (
 				FDA340E6285E023400DADE43 /* Lesson6 */,
 				FDA340E5285E023400DADE43 /* Products */,
+				FD3DD8E6285F2DC700B61780 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +100,82 @@
 		FDA340E6285E023400DADE43 /* Lesson6 */ = {
 			isa = PBXGroup;
 			children = (
-				FDA340E7285E023400DADE43 /* AppDelegate.swift */,
-				FDA340E9285E023400DADE43 /* SceneDelegate.swift */,
-				FDA340EB285E023400DADE43 /* ViewController.swift */,
-				FDA340ED285E023400DADE43 /* Main.storyboard */,
+				FD82654428605494008E8FBA /* WalkingTheWire.mp3 */,
+				FD82654228605485008E8FBA /* Yesterday.mp3 */,
+				FDA5104B285F4AAA00F4C2FD /* Model */,
+				FDA3411A285E049F00DADE43 /* ViewControllers */,
+				FDA34101285E043800DADE43 /* Views */,
+				FDA34114285E048000DADE43 /* Extensions */,
+				FDA3411B285E04D100DADE43 /* Storyboards */,
+				FDA34110285E048000DADE43 /* SupportingFiles */,
 				FDA340F0285E023700DADE43 /* Assets.xcassets */,
-				FDA340F2285E023700DADE43 /* LaunchScreen.storyboard */,
 				FDA340F5285E023700DADE43 /* Info.plist */,
 			);
 			path = Lesson6;
+			sourceTree = "<group>";
+		};
+		FDA34101285E043800DADE43 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FDA34103285E043800DADE43 /* MainTextField.swift */,
+				FDA34105285E043800DADE43 /* MainTopView.swift */,
+				FDA34106285E043800DADE43 /* HeaderLabel.swift */,
+				FDA34107285E043800DADE43 /* MainButton.swift */,
+				FDA34104285E043800DADE43 /* SongView.swift */,
+				FDA34108285E043800DADE43 /* SongImageView.swift */,
+				FD826540285FBAD5008E8FBA /* PlayerButtonsStackView.swift */,
+				FD826546286059A1008E8FBA /* CustomSlider.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FDA34110285E048000DADE43 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				FDA340E9285E023400DADE43 /* SceneDelegate.swift */,
+				FDA340E7285E023400DADE43 /* AppDelegate.swift */,
+				FDA34111285E048000DADE43 /* StringAttributes.swift */,
+				FDA34112285E048000DADE43 /* SegueIdentifiers.swift */,
+				FDA34113285E048000DADE43 /* Fonts.swift */,
+				FD3DD8E4285F217F00B61780 /* Images.swift */,
+			);
+			name = SupportingFiles;
+			path = Lesson6/SupportingFiles;
+			sourceTree = SOURCE_ROOT;
+		};
+		FDA34114285E048000DADE43 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FDA34115285E048000DADE43 /* UIButton + Extension.swift */,
+			);
+			name = Extensions;
+			path = Lesson6/Extensions;
+			sourceTree = SOURCE_ROOT;
+		};
+		FDA3411A285E049F00DADE43 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FDA340EB285E023400DADE43 /* MainViewController.swift */,
+				FDA3411C285E055700DADE43 /* PlayerViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FDA3411B285E04D100DADE43 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FDA340ED285E023400DADE43 /* Main.storyboard */,
+				FDA340F2285E023700DADE43 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FDA5104B285F4AAA00F4C2FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FDA5104C285F4AB400F4C2FD /* Song.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +194,9 @@
 			dependencies = (
 			);
 			name = Lesson6;
+			packageProductDependencies = (
+				FDA51049285F3B9E00F4C2FD /* SnapKit */,
+			);
 			productName = Lesson6;
 			productReference = FDA340E4285E023400DADE43 /* Lesson6.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +225,9 @@
 				Base,
 			);
 			mainGroup = FDA340DB285E023400DADE43;
+			packageReferences = (
+				FDA51048285F3B9E00F4C2FD /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = FDA340E5285E023400DADE43 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +242,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD82654528605494008E8FBA /* WalkingTheWire.mp3 in Resources */,
+				FD82654328605485008E8FBA /* Yesterday.mp3 in Resources */,
 				FDA340F4285E023700DADE43 /* LaunchScreen.storyboard in Resources */,
 				FDA340F1285E023700DADE43 /* Assets.xcassets in Resources */,
 				FDA340EF285E023400DADE43 /* Main.storyboard in Resources */,
@@ -138,9 +257,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDA340EC285E023400DADE43 /* ViewController.swift in Sources */,
+				FDA34117285E048000DADE43 /* SegueIdentifiers.swift in Sources */,
+				FD826547286059A2008E8FBA /* CustomSlider.swift in Sources */,
+				FDA340EC285E023400DADE43 /* MainViewController.swift in Sources */,
+				FD826541285FBAD5008E8FBA /* PlayerButtonsStackView.swift in Sources */,
+				FDA34118285E048000DADE43 /* Fonts.swift in Sources */,
+				FDA34119285E048000DADE43 /* UIButton + Extension.swift in Sources */,
+				FDA3410B285E043800DADE43 /* SongView.swift in Sources */,
+				FDA3410E285E043800DADE43 /* MainButton.swift in Sources */,
+				FDA3410A285E043800DADE43 /* MainTextField.swift in Sources */,
 				FDA340E8285E023400DADE43 /* AppDelegate.swift in Sources */,
+				FDA3410F285E043800DADE43 /* SongImageView.swift in Sources */,
+				FDA34116285E048000DADE43 /* StringAttributes.swift in Sources */,
 				FDA340EA285E023400DADE43 /* SceneDelegate.swift in Sources */,
+				FDA3410D285E043800DADE43 /* HeaderLabel.swift in Sources */,
+				FDA3410C285E043800DADE43 /* MainTopView.swift in Sources */,
+				FD3DD8E5285F217F00B61780 /* Images.swift in Sources */,
+				FDA5104D285F4AB400F4C2FD /* Song.swift in Sources */,
+				FDA3411D285E055700DADE43 /* PlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +350,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +404,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -283,6 +417,7 @@
 		FDA340F9285E023700DADE43 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -311,6 +446,7 @@
 		FDA340FA285E023700DADE43 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -358,6 +494,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FDA51048285F3B9E00F4C2FD /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FDA51049285F3B9E00F4C2FD /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FDA51048285F3B9E00F4C2FD /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FDA340DC285E023400DADE43 /* Project object */;
 }
