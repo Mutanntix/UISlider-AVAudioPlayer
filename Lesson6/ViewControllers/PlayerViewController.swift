@@ -10,6 +10,7 @@ import SnapKit
 
 class PlayerViewController: UIViewController {
     let btnStackView = PlayerButtonsStackView()
+    let sliderView = TrackSliderView()
     
     var songs = [Song]()
     var currentSong: Song!
@@ -29,7 +30,7 @@ extension PlayerViewController {
     }
     
     private func addSubviews() {
-        [btnStackView].forEach { [unowned self] subview in
+        [btnStackView, sliderView].forEach { [unowned self] subview in
             view.addSubview(subview)
         }
     }
@@ -43,6 +44,13 @@ extension PlayerViewController {
             make.width.equalToSuperview().multipliedBy(0.95)
             make.height.equalToSuperview().multipliedBy(0.1)
             make.bottomMargin.equalToSuperview()
+        }
+        
+        sliderView.snp.makeConstraints { make in
+            make.height.equalToSuperview().multipliedBy(0.15)
+            make.width.equalToSuperview().multipliedBy(0.9)
+            make.centerX.equalToSuperview()
+            make.bottomMargin.equalTo(btnStackView.snp_topMargin)
         }
     }
 }

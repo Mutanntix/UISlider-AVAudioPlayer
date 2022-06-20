@@ -12,6 +12,7 @@
 		FD82654328605485008E8FBA /* Yesterday.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FD82654228605485008E8FBA /* Yesterday.mp3 */; };
 		FD82654528605494008E8FBA /* WalkingTheWire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FD82654428605494008E8FBA /* WalkingTheWire.mp3 */; };
 		FD826547286059A2008E8FBA /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD826546286059A1008E8FBA /* CustomSlider.swift */; };
+		FD82654928605FC2008E8FBA /* TrackSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD82654828605FC2008E8FBA /* TrackSliderView.swift */; };
 		FDA340E8285E023400DADE43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA340E7285E023400DADE43 /* AppDelegate.swift */; };
 		FDA340EA285E023400DADE43 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA340E9285E023400DADE43 /* SceneDelegate.swift */; };
 		FDA340EC285E023400DADE43 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA340EB285E023400DADE43 /* MainViewController.swift */; };
@@ -39,6 +40,7 @@
 		FD82654228605485008E8FBA /* Yesterday.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Yesterday.mp3; path = ../../../../.Trash/Yesterday.mp3; sourceTree = "<group>"; };
 		FD82654428605494008E8FBA /* WalkingTheWire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WalkingTheWire.mp3; sourceTree = "<group>"; };
 		FD826546286059A1008E8FBA /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
+		FD82654828605FC2008E8FBA /* TrackSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackSliderView.swift; sourceTree = "<group>"; };
 		FDA340E4285E023400DADE43 /* Lesson6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDA340E7285E023400DADE43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDA340E9285E023400DADE43 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				FDA34108285E043800DADE43 /* SongImageView.swift */,
 				FD826540285FBAD5008E8FBA /* PlayerButtonsStackView.swift */,
 				FD826546286059A1008E8FBA /* CustomSlider.swift */,
+				FD82654828605FC2008E8FBA /* TrackSliderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				FDA340EC285E023400DADE43 /* MainViewController.swift in Sources */,
 				FD826541285FBAD5008E8FBA /* PlayerButtonsStackView.swift in Sources */,
 				FDA34118285E048000DADE43 /* Fonts.swift in Sources */,
+				FD82654928605FC2008E8FBA /* TrackSliderView.swift in Sources */,
 				FDA34119285E048000DADE43 /* UIButton + Extension.swift in Sources */,
 				FDA3410B285E043800DADE43 /* SongView.swift in Sources */,
 				FDA3410E285E043800DADE43 /* MainButton.swift in Sources */,
