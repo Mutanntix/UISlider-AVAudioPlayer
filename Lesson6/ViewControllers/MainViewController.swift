@@ -14,8 +14,10 @@ class MainViewController: UIViewController {
     let secondView = SongView()
     
     lazy var songs: [Song] = {
-        var song1 = Song("WalkingTheWire", "mp3", imageName: "imagineAlbumImg")
-        var song2 = Song("Yesterday", "mp3", imageName: "imagineAlbumImg")
+        var song1 = Song("WalkingTheWire", "mp3",
+                         imageName: "imagineAlbumImg")
+        var song2 = Song("Yesterday", "mp3",
+                         imageName: "imagineAlbumImg")
         
         return [song1, song2]
     }()
@@ -56,6 +58,7 @@ extension MainViewController {
         for (i, songView) in [frstView, secondView].enumerated() {
             songView.addGestureRecognizer(setupGesture())
             songView.nameLbl.text = songs[i].name
+            songView.durationLbl.text = songs[i].duration
             guard let imageName = songs[i].imageName
             else { return }
             songView.imageView.image = UIImage(named: imageName)
