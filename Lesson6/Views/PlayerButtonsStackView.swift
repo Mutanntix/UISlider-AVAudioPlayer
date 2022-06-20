@@ -9,7 +9,11 @@ import UIKit
 
 class PlayerButtonsStackView: UIStackView {
     let playBtn = MainButton(systemImageName: "play",
-                             highLightImageName: "play.fill")
+                             highLightImageName: "play.fill",
+                             color: nil,
+                             scale: .default,
+                             weight: .regular,
+                             pSize: 35)
     let shuffleBtn = MainButton(systemImageName: "shuffle",
                                 highLightImageName: "shuffle")
     let forwardBtn = MainButton(systemImageName: "forward",

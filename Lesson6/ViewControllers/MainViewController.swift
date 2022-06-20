@@ -33,7 +33,7 @@ class MainViewController: UIViewController {
         guard let sender = sender as? Int else {
             return
         }
-
+        playerVC.songIndex = sender
         playerVC.currentSong = songs[sender]
     }
 }
@@ -59,7 +59,6 @@ extension MainViewController {
             else { return }
             songView.imageView.image = UIImage(named: imageName)
         }
-        
     }
 }
 

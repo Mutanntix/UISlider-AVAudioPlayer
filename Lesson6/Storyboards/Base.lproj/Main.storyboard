@@ -18,7 +18,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="yXw-6Z-ddg"/>
+                    <navigationItem key="navigationItem" id="yXw-6Z-ddg">
+                        <barButtonItem key="backBarButtonItem" title=" " id="1da-Or-KAB"/>
+                    </navigationItem>
                     <connections>
                         <segue destination="dGP-HX-BqA" kind="show" identifier="toPlayer" id="Nzj-64-d9G"/>
                     </connections>

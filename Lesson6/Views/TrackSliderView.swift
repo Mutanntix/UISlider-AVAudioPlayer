@@ -33,6 +33,11 @@ class TrackSliderView: UIView {
         setupSlider()
     }
     
+    public func setupTextForLabels(passedTime: String, leftTime: String) {
+        timePassedLbl.text = passedTime
+        timeLeftLbl.text = leftTime
+    }
+    
     private func addSubviews() {
         [timePassedLbl, timeLeftLbl, slider].forEach {
             [unowned self] subview in
