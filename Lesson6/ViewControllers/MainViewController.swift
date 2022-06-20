@@ -78,7 +78,6 @@ extension MainViewController {
 //MARK: Constraints
 extension MainViewController {
     private func setupConstraints() {
-        
         topView.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.top.equalToSuperview().offset(30)

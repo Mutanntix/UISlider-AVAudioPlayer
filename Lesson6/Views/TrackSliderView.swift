@@ -38,6 +38,15 @@ class TrackSliderView: UIView {
         timeLeftLbl.text = leftTime
     }
     
+    public func setSlidersMaxValue(value: Float) {
+        slider.maximumValue = value
+        slider.minimumValue = 0.0
+    }
+    
+    public func setCurrentSlidersValue(value: Float) {
+        slider.setValue(value, animated: true)
+    }
+    
     private func addSubviews() {
         [timePassedLbl, timeLeftLbl, slider].forEach {
             [unowned self] subview in

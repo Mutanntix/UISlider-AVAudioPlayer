@@ -37,6 +37,8 @@ class PlayerViewController: UIViewController {
     var songs = [Song]()
     var currentSong: Song!
     var songIndex = 0
+    private var timer: Timer?
+    private var sliderTimer = Timer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,19 +46,30 @@ class PlayerViewController: UIViewController {
         initializate()
         setupConstraints()
     }
+    
+    deinit {
+        for elem in [btnStackView.playBtn, btnStackView.forwardBtn,
+                     btnStackView.backwardBtn, sliderView.slider] {
+            elem.removeTarget(nil,
+                              action: nil,
+                              for: .allEvents)
+        }
+        currentSong.stop()
+    }
 }
 
 //MARK: UI
 extension PlayerViewController {
     private func initializate() {
         addSubviews()
-        updateUI()
+        addBtnTargets()
+        setSongDuration()
+        setupTimer()
         
         navigationController?.navigationBar.isHidden = true
         
         albumImgView.layer.cornerRadius = 10
         albumImgView.clipsToBounds = true
-        
     }
     
     private func addSubviews() {
@@ -66,15 +79,6 @@ extension PlayerViewController {
         shareBtn].forEach { [unowned self] subview in
             view.addSubview(subview)
         }
-    }
-    
-    private func updateUI() {
-        currentSong.getSong()
-        
-        songDescrtiptionStackView.setupTextForLabels(name: currentSong.name,
-                                                     album: currentSong.albumName)
-        sliderView.setupTextForLabels(passedTime: "0.0",
-                                      leftTime: currentSong.duration)
     }
 }
 
@@ -110,12 +114,12 @@ extension PlayerViewController {
         }
         
         downBtn.snp.makeConstraints { make in
-            make.leadingMargin.equalToSuperview()
-            make.topMargin.equalToSuperview().multipliedBy(2)
+            make.leadingMargin.equalToSuperview().inset(10)
+            make.topMargin.equalToSuperview().multipliedBy(2.2)
         }
         
         shareBtn.snp.makeConstraints { make in
-            make.trailingMargin.equalToSuperview()
+            make.trailingMargin.equalToSuperview().inset(10)
             make.topMargin.equalToSuperview().multipliedBy(2)
         }
     }
@@ -123,7 +127,62 @@ extension PlayerViewController {
 
 //MARK: Methods
 extension PlayerViewController {
-    @objc private func playBtnPressed() {
+    private func addBtnTargets() {
+        btnStackView.playBtn.addTarget(self,
+                                       action: #selector(playBtnPressed),
+                                       for: .touchUpInside)
+        btnStackView.forwardBtn.addTarget(self,
+                                          action: #selector(nextBtnPressed),
+                                          for: .touchUpInside)
+        btnStackView.backwardBtn.addTarget(self,
+                                           action: #selector(prevBtnPressed),
+                                           for: .touchUpInside)
+        sliderView.slider.addTarget(self,
+                                    action: #selector(slidersValueChanged(_ :)),
+                                    for: .valueChanged)
+    }
+    
+    private func setSongDuration() {
+        sliderView.setSlidersMaxValue(value: currentSong.getSongDurationValue())
+    }
+    
+    private func setupTimer() {
+        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self,
+                            selector: #selector(updateTime),
+                            userInfo: nil, repeats: true)
+    }
+    
+    @objc private func updateTime() {
+        let timePlayed = currentSong.player.currentTime
+        let minutes = Int(timePlayed / 60)
+        let seconds = Int(timePlayed) % 60
+        let passStr = NSString(format: "%02d:%02d",
+                               minutes, seconds) as String
+        
+        let diffTime = currentSong.getSongDurationValue() - Float(timePlayed)
+        let diffMinutes = Int(diffTime / 60)
+        let diffSeconds = Int(diffTime.truncatingRemainder(dividingBy: 60))
+        let diffStr = NSString(format: "%02d:%02d",
+                               diffMinutes, diffSeconds) as String
+        sliderView.setupTextForLabels(passedTime: passStr,
+                                      leftTime: diffStr)
+        sliderView.setCurrentSlidersValue(value: Float(timePlayed))
+    }
+    
+    @objc private func slidersValueChanged(_ sender: UISlider) {
+        guard sender == sliderView.slider
+        else { return }
+        timer?.invalidate()
+        sliderTimer.invalidate()
+        sliderTimer = Timer.scheduledTimer(withTimeInterval: 0.2,
+                                     repeats: false,
+                                     block: { [unowned self] _ in
+            currentSong.rewindSong(value: sender.value)
+            setupTimer()
+        })
+    }
+    
+    @objc private func playBtnPressed(_ sender: UIButton) {
         currentSong.play()
     }
     
@@ -133,17 +192,23 @@ extension PlayerViewController {
             prevBtnPressed()
             return
         }
+        currentSong.stop()
         songIndex += 1
         currentSong = songs[songIndex]
+        setSongDuration()
+        currentSong.play()
     }
     
     @objc private func prevBtnPressed() {
-        guard songIndex >= 0
+        guard songIndex > 0
         else {
             nextBtnPressed()
             return
         }
+        currentSong.stop()
         songIndex -= 1
         currentSong = songs[songIndex]
+        setSongDuration()
+        currentSong.play()
     }
 }

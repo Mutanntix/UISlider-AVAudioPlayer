@@ -20,7 +20,6 @@
 		FDA340EF285E023400DADE43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDA340ED285E023400DADE43 /* Main.storyboard */; };
 		FDA340F1285E023700DADE43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDA340F0285E023700DADE43 /* Assets.xcassets */; };
 		FDA340F4285E023700DADE43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDA340F2285E023700DADE43 /* LaunchScreen.storyboard */; };
-		FDA3410A285E043800DADE43 /* MainTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA34103285E043800DADE43 /* MainTextField.swift */; };
 		FDA3410B285E043800DADE43 /* SongView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA34104285E043800DADE43 /* SongView.swift */; };
 		FDA3410C285E043800DADE43 /* MainTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA34105285E043800DADE43 /* MainTopView.swift */; };
 		FDA3410D285E043800DADE43 /* HeaderLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA34106285E043800DADE43 /* HeaderLabel.swift */; };
@@ -51,7 +50,6 @@
 		FDA340F0285E023700DADE43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDA340F3285E023700DADE43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDA340F5285E023700DADE43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FDA34103285E043800DADE43 /* MainTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTextField.swift; sourceTree = "<group>"; };
 		FDA34104285E043800DADE43 /* SongView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongView.swift; sourceTree = "<group>"; };
 		FDA34105285E043800DADE43 /* MainTopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTopView.swift; sourceTree = "<group>"; };
 		FDA34106285E043800DADE43 /* HeaderLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderLabel.swift; sourceTree = "<group>"; };
@@ -121,7 +119,6 @@
 		FDA34101285E043800DADE43 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FDA34103285E043800DADE43 /* MainTextField.swift */,
 				FDA34105285E043800DADE43 /* MainTopView.swift */,
 				FDA34106285E043800DADE43 /* HeaderLabel.swift */,
 				FDA34107285E043800DADE43 /* MainButton.swift */,
@@ -273,7 +270,6 @@
 				FDA3410B285E043800DADE43 /* SongView.swift in Sources */,
 				FDA3410E285E043800DADE43 /* MainButton.swift in Sources */,
 				FD82654B2860676F008E8FBA /* SongDescriptionStackView.swift in Sources */,
-				FDA3410A285E043800DADE43 /* MainTextField.swift in Sources */,
 				FDA340E8285E023400DADE43 /* AppDelegate.swift in Sources */,
 				FDA3410F285E043800DADE43 /* SongImageView.swift in Sources */,
 				FDA34116285E048000DADE43 /* StringAttributes.swift in Sources */,
